@@ -1,0 +1,8 @@
+.card__paragraph {
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.card__paragraph:last-of-type {
+    margin-bottom: 0;
+}

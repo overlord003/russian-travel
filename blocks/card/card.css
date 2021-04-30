@@ -1,0 +1,54 @@
+@import url(./__title/card__title.css);
+@import url(./__description/card__description.css);
+@import url(./__paragraph/card__paragraph.css);
+@import url(./__image/card__image.css);
+@import url(./__links/card__links.css);
+@import url(./__link/card__link.css);
+@import url(./__url/card__url.css);
+
+.card {
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+    grid-template-areas: 
+        "title links-description"
+        "image card-description";
+    column-gap: 48px;
+    row-gap:  40px;
+}
+
+.card:last-of-type {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1279px) {
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+        column-gap: 48px;
+        row-gap: 32px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .card {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        column-gap: 48px;
+        row-gap: 28px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+        grid-template-areas: 
+            "title"
+            "links-description"
+            "image"
+            "card-description";
+        justify-items: center;
+        row-gap: 32px;
+    }
+}
