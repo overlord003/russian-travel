@@ -1,4 +1,7 @@
 .card__url {
     margin: 0;
+    font-size: 12px;
+    line-height: 1.0;
+    letter-spacing: 0.2em;
     color: #AAAAAA;
 }

@@ -23,8 +23,10 @@
             <section class="lead">
                 <h1 class="lead__title">Путешествия по России</h1>
                 <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-                <img src="./images/travel-map.jpg" alt="Карта путешествия" class="lead__image">
-                <p class="lead__caption">Ваша полка - верхняя</p>
+                <figure class="lead__figure">
+                    <img src="./images/travel-map.jpg" alt="Карта путешествия" class="lead__image">
+                    <figcaption class="lead__caption">Ваша полка - верхняя</figcaption>
+                </figure>
             </section>
             <section class="intro">
                 <div class="intro__container">
@@ -42,19 +44,19 @@
                     </p>
                     <ul class="intro__list">
                         <li class="intro__item">
-                            <p class="intro__element"><span class="intro__span-accent">Часовых поясов</span> 11</p>
+                           <span class="intro__span-accent">Часовых поясов</span> 11
                         </li>
                         <li class="intro__item">
-                            <p class="intro__element"><span class="intro__span-accent">Объектов природного наследия ЮНЕСКО</span> 12</p>
+                           <span class="intro__span-accent">Объектов природного наследия ЮНЕСКО</span> 12
                         </li>
                         <li class="intro__item">
-                            <p class="intro__element"><span class="intro__span-accent">Объектов культурного наследия ЮНЕСКО</span> 16</p>
+                           <span class="intro__span-accent">Объектов культурного наследия ЮНЕСКО</span> 16
                         </li>
                         <li class="intro__item">
-                            <p class="intro__element"><span class="intro__span-accent">Прироных заповедников</span> 105</p>
+                           <span class="intro__span-accent">Прироных заповедников</span> 105
                         </li>
                         <li class="intro__item">
-                            <p class="intro__element"><span class="intro__span-accent">Аэропортов</span> 241</p>
+                           <span class="intro__span-accent">Аэропортов</span> 241
                         </li>
                     </ul>
                 </div>
@@ -183,20 +185,34 @@
             </section>
             <section class="cover">
                 <a href="https://stampsy.com/na-elektrichkakh-do-baikala" target="_blank" class="cover__link">
-                    <h2 class="cover__title">До Байкала «на собаках»</h2>
-                    <p class="cover__text">
-                        По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.
-                    </p>
+                    <div class="cover__overlay">
+                        <h2 class="cover__title">До Байкала «на собаках»</h2>
+                        <p class="cover__text">
+                            По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.
+                        </p>
+                    </div>
                 </a>
             </section>                   
         </main>
         <footer class="footer">
             <nav class="footer__nav">
-                <a href="https://yandex.ru/maps" target="_blank" class="footer__link link-animation">Карты</a>
-                <a href="https://yandex.ru/pogoda" target="_blank" class="footer__link link-animation">Погода</a>
-                <a href="https://rasp.yandex.ru" target="_blank" class="footer__link link-animation">Раписание</a>
-                <a href="https://calendar.yandex.ru" target="_blank" class="footer__link link-animation">Календарь</a>
-                <a href="https://travel.yandex.ru" target="_blank" class="footer__link link-animation">Путешествия</a>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="https://yandex.ru/maps" target="_blank" class="footer__link link-animation">Карты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://yandex.ru/pogoda" target="_blank" class="footer__link link-animation">Погода</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://rasp.yandex.ru" target="_blank" class="footer__link link-animation">Раписание</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://calendar.yandex.ru" target="_blank" class="footer__link link-animation">Календарь</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://travel.yandex.ru" target="_blank" class="footer__link link-animation">Путешествия</a>
+                    </li>
+                </ul>
             </nav>
             <p class="footer__author">&copy; 2021. Ловцова Кристина</p>
         </footer>
